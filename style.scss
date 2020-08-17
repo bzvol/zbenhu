@@ -6,33 +6,94 @@ body{
      rgba(24,104,193,1) 15%, rgba(16,136,129,1) 40%,
       rgba(16,136,129,1) 60%, rgba(24,104,193,1) 85%,
        rgba(28,116,214,1) 100%);
-    background-size: 400% 400%;
+    background-size: 300% 300%;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     color: white;
-    animation: gradient 30s ease infinite;
+    animation: gradient 20s ease-in-out infinite;
+    height: 300vh;
+}
+
+#top-mainfull{
+    height: 100vh;
+    margin-top: -4rem;
 }
 
 #top-centerbox{
-    width: 50%; 
-    height: 300px; 
-    border: 5px white dashed; 
+    width: 70vmax; 
+    height: 30vmin; 
     overflow: hidden;
 }
 
 #top-centerbox-name{
     font-family: 'Roboto Slab', serif;
-    font-size: 4rem; 
+    font-size: 3vw; 
     letter-spacing: 0.6rem;
+    text-align: center;
+}
+#top-centerbox-desc{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3vw;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    color: #dcdcdc
+}
+
+#top-centerbox-image{
+    width: 27vmin;
+    height: 27vmin;
+    border: 6px solid #474747;
+}
+
+#top-langselect{
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.3vw;
+}
+
+#top-menu{
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 1.7vw;
+}
+
+.cropcircle {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.cropcircle img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
+ul,
+ul li,
+ul ul li {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: none;
 }
 
 @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
-// This mixin are from an article written by Glenn McComb - https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+.testborder{
+    border: 1px solid white;
+}
+
+// This mixin is from an article written by Glenn McComb - https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
 $sm : 576px;
 $md : 768px;
 $lg : 992px;
@@ -43,7 +104,7 @@ $xl : 1200px;
     }
 }
 
-@include respond-below($sm) { .hide-br-sm{display: none;} }
-@include respond-below($md) { .hide-br-md{display: none;} }
-@include respond-below($lg) { .hide-br-lg{display: none;} }
-@include respond-below($xl) { .hide-br-xl{display: none;} }
+@include respond-below($sm) { .hideit-sm{display: none;} }
+@include respond-below($md) { .hideit-md{display: none;} }
+@include respond-below($lg) { .hideit-lg{display: none;} }
+@include respond-below($xl) { .hideit-xl{display: none;} }

@@ -2,54 +2,116 @@
 body {
   background: #1c74d6;
   background: linear-gradient(103deg, #1c74d6 0%, #1868c1 15%, #108881 40%, #108881 60%, #1868c1 85%, #1c74d6 100%);
-  background-size: 400% 400%;
+  background-size: 300% 300%;
   font-family: "Roboto", sans-serif;
   height: 100vh;
   color: white;
-  animation: gradient 30s ease infinite;
+  animation: gradient 20s ease-in-out infinite;
+  height: 300vh;
+}
+
+#top-mainfull {
+  height: 100vh;
+  margin-top: -4rem;
 }
 
 #top-centerbox {
-  width: 50%;
-  height: 300px;
-  border: 5px white dashed;
+  width: 70vmax;
+  height: 30vmin;
   overflow: hidden;
 }
 
 #top-centerbox-name {
   font-family: "Roboto Slab", serif;
-  font-size: 4rem;
+  font-size: 3vw;
   letter-spacing: 0.6rem;
+  text-align: center;
+}
+
+#top-centerbox-desc {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3vw;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  color: #dcdcdc;
+}
+
+#top-centerbox-image {
+  width: 27vmin;
+  height: 27vmin;
+  border: 6px solid #474747;
+}
+
+#top-langselect {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.3vw;
+}
+
+#top-menu {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 1.7vw;
+}
+
+.cropcircle {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cropcircle img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+ul,
+ul li,
+ul ul li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
 }
+.testborder {
+  border: 1px solid white;
+}
+
 @media (min-width: 576px) {
-  .hide-br-sm {
+  .hideit-sm {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .hide-br-md {
+  .hideit-md {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  .hide-br-lg {
+  .hideit-lg {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .hide-br-xl {
+  .hideit-xl {
     display: none;
   }
 }

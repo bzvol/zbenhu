@@ -11,13 +11,49 @@
 </head>
 <body>
     
-    <div id="top-menu" style="display: none;"></div>
-    <div id="top-langselect" style="display: none;"></div>
-    <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100vh;">
-        <div id="top-centerbox" class="p-3">
-            <span id="top-centerbox-name">Benjámin Zvolenszki</span>
+    <div id="top-menu">
+        <ul>
+            <li>Home</li>
+            <li>Info</li>
+            <li>My projects</li>
+        </ul>
+    </div>
+
+    <div id="top-langselect">
+        <span>Magyar</span> / <span>English</span>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" id="top-mainfull">
+        <div id="top-centerbox" class="container">
+            <div class="row" style="height: inherit;">
+
+                <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <div id="top-centerbox-image" class="cropcircle">
+                        <img src="DSC04942.JPG" alt="Profile image" title="Profile image">
+                    </div>
+                </div>
+
+                <div class="col-9 d-flex flex-column justify-content-center">
+
+                    <div class="row">
+                        <div id="top-centerbox-name" class="col">
+                            Benjámin Zvolenszki
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--color: #DCDCDC-->
+                        <div id="top-centerbox-desc" class="col">
+                                Leírás
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
+
     <div id="top-more" style="display: none;"> </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
