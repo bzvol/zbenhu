@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Benjamin Z.</title>
 </head>
@@ -25,18 +25,20 @@
         <span>Magyar</span> / <span>English</span>
     </div>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center" id="top-mainfull">
-        <div id="top-centerbox" class="container-fluid">
-            <div class="col">
+    <div class="container-fluid d-flex align-items-center justify-content-center p-0" id="top-mainfull">
+        <div id="top-centerbox" class="container-fluid justify-content-center align-items-center d-flex m-0 p-0">
+            <div class="col-sm-8 col-12 m-0 p-0">
                 <div class="row" style="height: inherit;">
     
-                    <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-sm-3 col-12 p-0 d-flex flex-column justify-content-center align-items-center">
                         <div id="top-centerbox-image" class="cropcircle">
-                            <img src="../DSC04942.JPG" alt="Profile image" title="Profile image">
+                            <img src="DSC04942.JPG" alt="Profile image" title="Profile image">
                         </div>
                     </div>
-    
-                    <div class="col-9 d-flex flex-column justify-content-center">
+                    
+                    <br class="hideit-sm">
+
+                    <div class="col-sm-9 col-12 d-flex flex-column justify-content-center">
     
                         <div class="row">
                             <div id="top-centerbox-name" class="col">
@@ -58,7 +60,12 @@
         </div>
     </div>
 
-    <div id="top-more" style="display: none;"> </div>
+    <div class="container-fluid d-flex justify-content-center" id="top-more-parent">
+        <div id="top-more" class="d-flex flex-column justify-content-between align-items-center text-center">
+            More
+            <img src="arrow.svg" alt="Down arrow" style="height: 75%; width: 75%; fill: white;">
+        </div>
+    </div>
 
     <!-- Bootstrap JS scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

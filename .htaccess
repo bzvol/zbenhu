@@ -1,0 +1,8 @@
+Options All -Indexes
+
+Order Allow,Deny
+Deny from All
+
+<FilesMatch "^(index\.html|style\.css|DSC04942\.JPG|arrow\.svg)?$">
+    Allow from All
+</FilesMatch>
