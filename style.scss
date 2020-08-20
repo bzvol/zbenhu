@@ -11,6 +11,10 @@ $xl : 1200px;
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: rgb(28,116,214);
     background: linear-gradient(103deg, rgba(28,116,214,1) 0%,
@@ -26,7 +30,6 @@ body{
 }
 
 #top-mainfull{
-    height: 100vh;
     margin-top: 5rem;
 }
 @include respond-below($sm){
@@ -101,6 +104,10 @@ body{
     //font-weight: 600;
 }
 
+#middle-mainfull, #bottom-mainfull{
+    margin-top: -1rem;
+}
+
 .cropcircle {
     position: relative;
     overflow: hidden;
@@ -113,14 +120,24 @@ body{
     width: auto;
 }
 
+.h-100vh{
+    height: 100vh;
+}
 
-ul,
-ul li,
-ul ul li {
-   margin:0;
-   padding: 0;
-   text-indent: 0;
-   list-style-type: none;
+a, a:link, a:hover, a:focus {
+    color: white !important;
+    text-decoration: none;
+}
+#top-menu a{
+    padding-left: 0;
+    transition: padding-left .2s ease-out;
+}
+#top-menu a:hover{
+    padding-left: 1.5rem;
+    transition: padding-left .2s ease-out;
+}
+a:hover {
+    color: rgb(128, 128, 128);
 }
 
 @keyframes gradient {
