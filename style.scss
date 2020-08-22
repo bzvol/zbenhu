@@ -66,11 +66,27 @@ body{
     width: 18.5rem;
     height: 18.5rem;
     border: 2px solid #474747;
+    margin-right: 100rem;
+    animation: slide-in-right 1.5s ease-out 0.5s forwards;
 }
 @include respond-below($sm){
     #top-centerbox-image{
         border: 6px solid #474747;
     }
+}
+
+#animated-namedesc-box{
+    margin-left: 100rem;
+    animation: slide-in-left 1.5s ease-out 0.5s forwards;
+}
+
+@keyframes slide-in-left{
+    from{margin-left: 100rem;}
+    to{margin-left: 0;}
+}
+@keyframes slide-in-right{
+    from{margin-right: 100rem;}
+    to{margin-right: 0;}
 }
 
 #top-langselect{
@@ -106,6 +122,15 @@ body{
 
 #middle-mainfull, #bottom-mainfull{
     margin-top: -1rem;
+}
+
+#middle-centerbox{
+    height: 50rem;
+}
+@include respond-below($sm){
+    #middle-centerbox{
+        height: 25rem;
+    }
 }
 
 .cropcircle {
@@ -151,6 +176,3 @@ a:hover {
 }
 
 @include respond-below($sm) { .hideit-sm{display: none;} }
-@include respond-below($md) { .hideit-md{display: none;} }
-@include respond-below($lg) { .hideit-lg{display: none;} }
-@include respond-below($xl) { .hideit-xl{display: none;} }
