@@ -8,49 +8,68 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <title>Benjamin Z.</title>
+    <title>Benjámin Zvolenszki</title>
 </head>
 <body>
     <a id="top"></a>
-    <div id="top-menu">
-        <ul class="list-unstyled">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#middle">Info</a></li>
-            <li><a href="#bottom">My projects</a></li>
-        </ul>
+    <div id="top-menu-www" class="d-none d-md-block">
+        <div id="top-menu">
+            <ul class="list-unstyled">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#middle">Info</a></li>
+                <li><a href="#bottom">My projects</a></li>
+            </ul>
+        </div>
+    
+        <div id="top-langselect">
+            <a>Magyar</a> / <a>English</a> / <a>Deutsche</a>
+        </div>
     </div>
-
-    <div id="top-langselect">
-        <span>Magyar</span> / <span>English</span>
+    <div id="top-menu-m" class="d-block d-md-none container-fluid py-2">
+        <div class="row">
+            <div class="col d-flex justify-content-start align-items-center" style="font-size: 1.4rem;">
+                <a href="#top" class="mr-3">Home</a>
+                <a href="#middle" class="mr-3">Info</a>
+                <a href="#bottom">My projects</a>
+            </div>
+            <div class="col d-flex justify-content-end align-content-center">
+                <a>Magyar</a>
+                <span class="mx-1">/</span>
+                <a>English</a>
+                <span class="mx-1">/</span>
+                <a>Deutsche</a>
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid d-flex align-items-center justify-content-center p-0 h-100vh" id="top-mainfull">
         <div id="top-centerbox" class="container-fluid justify-content-center align-items-center d-flex m-0 p-0">
-            <div class="col-sm-8 col-12 m-0 p-0">
+            <div class="col-md-8 col-12 m-0 p-0">
                 <div class="row" style="height: inherit;">
     
-                    <div class="col-sm-3 col-12 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-md-3 col-12 p-0 d-flex flex-column justify-content-center align-items-center" style="overflow: hidden;">
                         <div id="top-centerbox-image" class="cropcircle">
-                            <img src="DSC04942.JPG" alt="Profile image" title="Profile image">
+                            <img src="DSC04942.JPG" alt="Profile image">
                         </div>
                     </div>
                     
-                    <br class="hideit-sm">
+                    <br class="d-md-none">
 
-                    <div id="animated-namedesc-box" class="col-sm-9 col-12 d-flex flex-column justify-content-center">
+                    <div id="animated-namedesc-box" class="col-md-9 col-12 d-flex flex-column justify-content-center mt-md-0 mt-3" style="overflow: hidden;">
     
                         <div class="row">
-                            <div id="top-centerbox-name" class="col" title="Name">
-                                Benjámin Zvolenszki
+                            <div id="top-centerbox-name" class="col">
+                                <span>Benjámin Zvolenszki</span>
                             </div>
                         </div>
     
-                        <div class="row">
+                        <div class="row" id="top-centerbox-desc">
                             <!--color: #DCDCDC-->
-                            <div id="top-centerbox-desc" class="col" title="Description">
-                                    Leírás
-                            </div>
+                            <div class="col text-right animated-desc-box">Learning to be a</div>
+                            <div class="col text-left" style="font-weight: 600;">software developer</div>
                         </div>
     
                     </div>
@@ -64,7 +83,8 @@
         <a href="#middle">
             <div id="top-more" class="d-flex flex-column justify-content-between align-items-center text-center">
                 More
-                <img src="arrow.svg" alt="Down arrow" style="height: 75%; width: 75%; fill: white;">
+                <img src="arrow.svg" alt="Down arrow" style="height: 75%; width: 75%;">
+                <span style="height: 2rem;"></span>
             </div>
         </a>
     </div>
@@ -73,10 +93,36 @@
 
     <div class="container-fluid d-flex align-items-center justify-content-center p-0 h-100vh" id="middle-mainfull">
         <div id="middle-centerbox" class="container-fluid d-flex justify-content-center p-0 m-0">
-            <div class="row col-12 col-sm-11">
-                <div class="col-12 col-sm testborder"></div>
-                <br class="hideit-sm">
-                <div class="col-12 col-sm testborder"></div>
+            <div class="row col-12 col-md-11">
+                <div class="col-12 col-md p-0">
+                    <div class="row col m-0 d-flex justify-content-center align-items-center" style="height: 41.25%;">
+                        <div id="longdesctext" class="middle-items-inner d-inline-block text-justify">
+                            Software development <b>student</b>, <b>programmer</b>, hobby photographer and youtuber, <b>addict</b> of road biking, <b>nature-lover</b>
+                        </div>
+                    </div>
+                    <div class="row col m-0" style="height: 17.5%;"></div>
+                    <div class="row col m-0 d-flex justify-content-center align-items-center" style="height: 41.25%">
+                        <!-- Birth date, location -->
+                        <div id="longdesctext" class="middle-items-inner container-fluid m-0 p-0">
+                            <div class="row h-50 col d-flex justify-content-center align-items-center m-0 p-0">
+                                Location
+                            </div>
+                            <div class="row h-50 col d-flex justify-content-center align-items-center m-0 p-0">
+                                Birth date
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br class="d-md-none">
+                <div class="col-12 col-md p-0">
+                    <div class="row col m-0" style="height: 29.375%;"></div>
+                    <div class="row col m-0 d-flex justify-content-center align-items-center" style="height: 41.25%;">
+                        <div class="middle-items-inner d-inline-block" style="font-size: 2rem;">
+                            Social links
+                        </div>
+                    </div>
+                    <div class="row col m-0" style="height: 29.375%"></div>
+                </div>
             </div>
         </div>
     </div>

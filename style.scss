@@ -30,22 +30,12 @@ body{
 }
 
 #top-mainfull{
-    margin-top: 5rem;
-}
-@include respond-below($sm){
-    #top-mainfull{
-        margin-top: -4rem;
-    }
+    margin-top: -10rem;
 }
 
 #top-centerbox{
     height: 40rem; 
     overflow: hidden;
-}
-@include respond-below($sm){
-    #top-centerbox{
-        height: 20rem;
-    }
 }
 
 #top-centerbox-name{
@@ -57,37 +47,23 @@ body{
 #top-centerbox-desc{
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
-    letter-spacing: 0.4rem;
-    text-align: center;
+    letter-spacing: 0.3rem;
     color: #dcdcdc
 }
 
+.animated-desc-box{
+    color: #000000;
+    display: none;
+}
+
 #top-centerbox-image{
-    width: 18.5rem;
-    height: 18.5rem;
-    border: 2px solid #474747;
-    margin-right: 100rem;
-    animation: slide-in-right 1.5s ease-out 0.5s forwards;
-}
-@include respond-below($sm){
-    #top-centerbox-image{
-        border: 6px solid #474747;
-    }
+    width: 15rem;
+    height: 15rem;
+    border: 6px solid #474747;
+    margin-bottom: 40rem;
 }
 
-#animated-namedesc-box{
-    margin-left: 100rem;
-    animation: slide-in-left 1.5s ease-out 0.5s forwards;
-}
-
-@keyframes slide-in-left{
-    from{margin-left: 100rem;}
-    to{margin-left: 0;}
-}
-@keyframes slide-in-right{
-    from{margin-right: 100rem;}
-    to{margin-right: 0;}
-}
+#animated-namedesc-box{margin-bottom: 40rem;}
 
 #top-langselect{
     display: block;
@@ -95,6 +71,7 @@ body{
     top: 1rem;
     right: 1.5rem;
     font-size: 1.3rem;
+    z-index: 3;
 }
 
 #top-menu{
@@ -102,22 +79,23 @@ body{
     position: fixed;
     top: 1rem;
     left: 1.5rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    z-index: 3;
+}
+
+#top-menu-m{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #top-more-parent{
-    margin-top: -8rem;
-}
-@include respond-below($sm){
-    #top-more-parent{
-        margin-top: -4rem;
-    }
+    margin-top: -9rem;
 }
 #top-more{
-    height: 7rem;
+    height: 8rem;
     width: 5rem;
     font-size: 1.3rem;
-    //font-weight: 600;
 }
 
 #middle-mainfull, #bottom-mainfull{
@@ -127,9 +105,28 @@ body{
 #middle-centerbox{
     height: 50rem;
 }
-@include respond-below($sm){
+
+.middle-items-inner{
+    height: 12rem;
+    width: 35rem;
+}
+
+#longdesctext{
+    font-size: 2rem;
+}
+
+@include respond-below($md){
+    #top-mainfull{
+        margin-top: -4rem;
+    }
+    #top-centerbox{
+        height: 20rem;
+    }
+    #top-more-parent{
+        margin-top: -5rem;
+    }
     #middle-centerbox{
-        height: 25rem;
+        height: 40rem;
     }
 }
 
@@ -161,8 +158,22 @@ a, a:link, a:hover, a:focus {
     padding-left: 1.5rem;
     transition: padding-left .2s ease-out;
 }
-a:hover {
-    color: rgb(128, 128, 128);
+#top-langselect a{
+    padding-top: 0;
+    transition: padding-top .2s ease-out;
+}
+#top-langselect a:hover{
+    padding-top: 1rem;
+    transition: padding-top .2s ease-out;
+}
+
+#top-menu-m a{
+    padding-top: 0;
+    transition: padding-top .2s ease-out;
+}
+#top-menu-m a:hover{
+    padding-top: 1rem;
+    transition: padding-top .2s ease-out;
 }
 
 @keyframes gradient {
@@ -174,5 +185,3 @@ a:hover {
 .testborder{
     border: 1px solid white;
 }
-
-@include respond-below($sm) { .hideit-sm{display: none;} }
