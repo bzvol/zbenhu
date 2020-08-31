@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjámin Zvolenszki's webpage</title>
+    <style>
+        body{
+            background-color: rgb(195, 255, 255);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #centered{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        #profileimage{
+            width: 200px;
+            height: 200px;
+            border: 5px rgb(24, 24, 24) solid;
+        }
+        .glassaqua{
+            background-image: url("img/glassaqua-button.png");
+            background-position: center;
+            background-size: cover;
+            font-size: 11px;
+            background-color: transparent;
+            border: 0;
+            height: 30px;
+            width: 75px;
+        }
+        .glassaqua:active{
+            background-color: rgba(0, 0, 0, 0.212);
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="centered">
+        <img id="profileimage" src="img/DSC04942.JPG" alt="Profile image">
+        <h1>Benjámin Zvolenszki</h1>
+        <h3>Learning software development</h3>
+        <div></div>
+        <nav>
+            <button class="glassaqua" onclick="location.href='https://twitter.com/b_zvolenszki'">Twitter</button>
+            <button class="glassaqua" onclick="location.href='https://www.facebook.com/zbenjamin2003'">Facebook</button>
+            <button class="glassaqua" onclick="location.href='https://github.com/zvolenszkibenjamin'">Github</button>
+            <button class="glassaqua" onclick="location.href='index.html'" style="margin-left: 30px">Back</button>
+        </nav>
+    </div>
+</body>
+</html>
