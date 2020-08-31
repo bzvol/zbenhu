@@ -1,4 +1,4 @@
-![zben.hu](readmemdlogo.png)
+![zben.hu](zbenhu.png)
 # zben.hu - my personal website
 ## The plan
 So I decided to buy a domain and a web host (at [Nethely](https://www.nethely.hu)) and to make my own personal website. The plan is to **finish it in about two weeks**, before the start of the school.
