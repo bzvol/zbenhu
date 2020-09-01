@@ -15,7 +15,13 @@ $.fn.shuffleChildren = function() {
 
 $(document).ready(function(){
 
+  var $break = $("#maillinkbr")[0];
+  $break.remove();
+  var $maillink = $(".maillink");
+  $maillink.remove();
   $(".social-links").shuffleChildren();
+  $(".social-links").append($break);
+  $(".social-links").append($maillink[0]);
 
   $("#top-centerbox-image").delay(300).animate({marginBottom: 0}, 1500);
   $("#animated-namedesc-box").delay(300).animate({marginBottom: 0}, 1500);
